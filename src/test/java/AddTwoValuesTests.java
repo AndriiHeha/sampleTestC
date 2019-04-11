@@ -5,7 +5,7 @@ import org.junit.Test;
 import static junit.framework.TestCase.assertEquals;
 
 /**
- * Created by kate on 1/12/16.
+ * Created by Agega on 1/12/16.
  */
 
 public class AddTwoValuesTests {

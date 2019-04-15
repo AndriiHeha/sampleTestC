@@ -1,17 +1,17 @@
 /**
- * Created by kate on 1/12/16.
+ * Created by Aheha on 1/12/16.
  */
-
+// here is the test class
 public class Calculator {
 
     public static void main(String[] args) {
 
     }
 
+
     public int add(int a, int b) {
 
         return a + b;
-
     }
 
     public int multiply(int a, int b) {
@@ -33,6 +33,7 @@ public class Calculator {
     public double pov(int a, int b) {
         return Math.pow(a, b);
     }
+
 }
 
 

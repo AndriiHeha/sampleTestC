@@ -30,15 +30,21 @@ public class AddTwoValuesTests {
     //TODO
     //add new tests for add() method
     @Test
-    public void testAddTwoValues() { assertEquals("112 + 3 must be 115", 115, calc.add(112, 3)); }
+    public void testAddTwoValues() {
+        assertEquals("112 + 3 must be 115", 115, calc.add(112, 3));
+    }
 
     //TODO
     //add tests for new methods
     @Test
-    public void multiplyAB(){ assertEquals("2 * 3 must be 6", 6, calc.multiply(2, 3));}
+    public void multiplyAB() {
+        assertEquals("2 * 3 must be 6", 6, calc.multiply(2, 3));
+    }
     //division Tests
     @Test
-    public void testDivisionTwoValues() {assertEquals("12 / 3 must be 4", 4.0, calc.division(12, 3));}
+    public void testDivisionTwoValues() {
+        assertEquals("12 / 3 must be 4", 4.0, calc.division(12, 3));
+    }
 
     @Test
     public void divisionByZero() {
@@ -49,20 +55,31 @@ public class AddTwoValuesTests {
             mesageError = e.getMessage();
         }
 
-            assertEquals("12 / 0 must be ", "/ by zero", mesageError);
-        }
+        assertEquals("12 / 0 must be ", "/ by zero", mesageError);
+    }
 
     //substration
     @Test
-    public void testSubstration() {assertEquals("20 - 10  must be 10", 10, calc.substrationAB(20, 10));}
+    public void testSubstration() {
+        assertEquals("20 - 10  must be 10", 10, calc.substrationAB(20, 10));
+    }
 
     //squareRoot
     @Test
-    public void testSQRT() {assertEquals("144  must be 12", 12.0, calc.squareRootA(144));}
+    public void testSQRT() {
+        assertEquals("144  must be 12", 12.0, calc.squareRootA(144));
+    }
 
     //x*2
     @Test
-    public void testPOV() {assertEquals("3 pov 2   must be 6", 9.0, calc.pov(3, 2));}
+    public void testPOV() {
+        assertEquals("3 pov 2   must be 6", 9.0, calc.pov(3, 2));
+    }
+
+    @Test
+    public void testMultyAndAdd(){
+        assertEquals("4 + 5 * 3 must be 19", 19, calc.multiplyAndAddABC(4, 5, 3));
+    }
 
     //
     @After
